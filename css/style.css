@@ -26,3 +26,36 @@ body {
   align-items: center;
   height: 100vh; /* 100% del viewport */
 }
+
+.card {
+  background-color: white;
+  width: 325px;
+  border-radius: 15px;
+  overflow: hidden; /* Elementos sobrantes no se muestran, pero la imagen sigue ahí */
+  box-shadow: 5px 5px 10px rgba(161, 161, 161, 0.5);
+}
+
+.card-img {
+  width: 100%;
+  display: block; /* Para que desaparezca el espacio fantasma entre la imagen y la foto */
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-info-foto {
+  border: 5px solid white;
+  border-radius: 50%;
+  /*margin-top: -48px;  La mitad del tamaño de la imagen*/
+  margin-top: calc(
+    -48px - 5px
+  ); /* Permite hacer cálculos para agregar el borde*/
+  background-color: white;
+  /* object-fit: cover; */
+}
+
+.card-info-titulo {
+}
